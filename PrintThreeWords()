@@ -1,0 +1,187 @@
+// Задание 1
+public class PrintThreeWords {
+
+    public static void main(String[] args) {
+        System.out.println("Orange");
+        System.out.println("Banana");
+        System.out.println("Apple");
+}
+}
+// Задание 2
+public class checkSumSign {
+  
+   public static void main(String[] args) {
+     int a, b;
+     a=b=10;
+     if (a+b >=0) {
+       System.out.println("Сумма положительная");
+} else {
+System.out.println("Сумма отрицательная");
+}
+}
+}
+// Задание 3
+public class printColor {
+   public static void main(String[] args) {
+     int a = 10;
+     if (a <=0) {
+       System.out.println("Красный");
+} else if {
+  a<0;
+  a>=100;
+System.out.println("Желтый");
+    }
+else (a>100) {
+  System.out.println("Зеленый");
+}
+}
+}
+// Задание 4
+public class compareNumbers {
+   public static void main(String[] args) {
+     int a, b = 10;
+     if (a >=b) {
+       System.out.println("a >=b");
+} else 
+System.out.println("a<b");
+}
+}
+// Задание 5
+public class SumNumb {
+    public static void main(String[] args) {
+        int numbOne = 1;
+        int numbTwo = 2;
+        System.out.println(isSumRange(numbOne, numbTwo));
+    }
+    public static boolean isSumRange(int numbOne, int numbTwo) {
+        int sum = numbOne + numbTwo;
+        return sum >= 10 && sum <= 20;
+}
+}
+// Задание 6
+public class CheckNumbPositive {
+    public static void main(String[] args) {
+        checkNumbPositive(5);
+       }
+    public static void checkNumbPositive(int numb) {
+        if (numb >= 0) {
+            System.out.println("Число положительное");
+        } else {
+            System.out.println("Число отрицательное");
+}
+}
+}
+// Задание 7
+public class WholeNumb {
+    public static boolean numbIsNegative(int numb) {
+        return numb < 0;
+    }
+    public static void main(String[] args) {
+        boolean result;
+        result = numbIsNegative(10);
+        System.out.println(result);
+}
+}
+//Задание 8
+public class String {
+    public static void StringPrint (String text, int times) {
+        for (int i = 0; i < times; i++) {
+            System.out.println(text);
+        }
+    }
+
+    public static void main(String[] args) {
+        StringPrint ("Hello, world!", 3);
+}
+}
+//Задание 9
+public class leapYear {
+    public static void main(String[] args) {
+            int year = 2000;
+            System.out.println(leapYear(year));
+        }
+        public static boolean leapYear(int year) {
+            if (year % 4 == 0) {
+                if (year % 100 == 0) {
+                    return year % 400 == 0;
+                } else {
+                    return true;
+                }
+}
+            return false;
+}
+}
+//Задание 10
+public class IntArray {
+    public static void main(String[] args) {
+        int[] array = { 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 };
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 0) {
+                array[i] = 1;
+            } else {
+                array[i] = 0;
+            }
+        }
+        for (int value : array) {
+            System.out.print(value + " ");
+}
+}
+}
+//Задание 11
+public class FillArr {
+    public static void main(String[] args) {
+        int[] array = new int[100];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i + 1;}
+            for (int i = 0; i < array.length; i++) {
+                System.out.print(array[i] + " ");
+    }
+    }
+    }
+//Задание 12
+public class ArrayMult {
+    public static void main(String[] args) {
+        int[] array = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < 6) {
+                array[i] = array[i] * 2;
+            }
+        }
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+}
+}
+}
+//Задание 13
+public class SquarelArray {
+    public static void main(String args[]) {
+        int counter = 10;
+        int[][] table = new int[counter][counter];
+        for (int i = 0; i < counter; i++) {
+            table[i][i] = 1;
+        }
+        for (int i = 0; i < counter; i++) {
+            for (int j = 0; j < counter; j++) {
+                System.out.print(table[i][j] + " ");
+            }
+            System.out.println();
+}
+}
+}
+// Задание 14
+public class intArray {
+    public static int[] intArray(int len, int initialValue) {
+        int[] array = new int[len];
+        for (int i = 0; i < len; i++) {
+            array[i] = initialValue;
+        }
+        return array;
+    }
+    public static void main(String[] args) {
+        int[] isArray = intArray(10, 1);
+        for (int i : isArray) {
+            System.out.println(i);
+}
+}
+}
+
